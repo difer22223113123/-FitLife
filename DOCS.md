@@ -1,35 +1,35 @@
-# FitLife Fitness Club - Modul 1. Analiz va Proyektlash
+# Фитнес-клуб FitLife - Модуль 1. Анализ и проектирование
 
-## 1. Predmet sohasi tahlili
-FitLife klubi mijozlarga sport xizmatlarini ko'rsatuvchi muassasa. 
-- **Mijozlar:** Mashg'ulotlarni tanlaydi, yoziladi, to'lov qiladi.
-- **Menejer:** Arizalarni boshqaradi, guruhlarni shakllantiradi.
+## 1. Анализ предметной области
+Клуб FitLife — это учреждение, предоставляющее спортивные услуги клиентам.
+- **Клиенты:** Выбирают направления, записываются, оплачивают.
+- **Менеджер:** Управляет заявками, формирует группы.
 
-## 2. Use Case Diagram (Mantiqiy model)
-### Mijoz (Actor):
-1. Mashg'ulot yo'nalishlarini ko'rish.
-2. Sinov darsiga yozilish.
-3. Obuna uchun to'lov qilish.
-4. Jadval o'zgarishi haqida bildirishnoma olish.
+## 2. Диаграмма прецедентов (Use Case Diagram)
+### Клиент (Актер):
+1. Просмотр направлений тренировок.
+2. Запись на пробное занятие.
+3. Оплата абонемента.
+4. Получение уведомлений об изменении расписания.
 
-### Menejer (Actor):
-1. Mijoz arizalarini ko'rib chiqish.
-2. Arizani tasdiqlash uchun mijoz bilan bog'lanish.
-3. Obunani rasmiylashtirish.
-4. Guruhlar va mijozlar ro'yxatini yuritish.
+### Менеджер (Актер):
+1. Просмотр заявок клиентов.
+2. Связь с клиентом для подтверждения заявки.
+3. Оформление абонемента.
+4. Ведение списков групп и клиентов.
 
-## 3. Class Diagram (Ma'lumotlar strukturasi)
+## 3. Диаграмма классов (Class Diagram)
 - **Client:** id, fullName, phone, email, direction, subscriptionType.
 - **Manager:** id, fullName, email.
 - **Direction:** id, name, description, pricePerMonth.
 - **Subscription:** id, clientId, directionId, startDate, endDate, status.
 - **Group:** id, directionId, schedule, maxCapacity, currentCount.
 
-## 4. Modul 2 - Prototiplash (Dizayn asoslari)
-Sayt 3 ta asosiy sahifadan iborat:
-1. **Bosh sahifa:** Hero section, Imkoniyatlar, Mijozlar fikri.
-2. **Yo'nalishlar:** Kartochkalar va Kalkulyator.
-3. **Yozilish sahifasi:** Validatsiya qilinadigan forma.
+## 4. Модуль 2 - Прототипирование (Основы дизайна)
+Сайт состоит из 3 основных страниц:
+1. **Главная страница:** Hero section, преимущества, отзывы клиентов.
+2. **Направления:** Карточки направлений и калькулятор стоимости.
+3. **Страница записи:** Форма с валидацией.
 
 ---
-*Ushbu hujjat FitLife loyihasining arxitekturaviy asosini tashkil etadi.*
+*Данный документ является архитектурной основой проекта FitLife.*

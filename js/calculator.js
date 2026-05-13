@@ -4,12 +4,11 @@ function calculatePrice() {
     const sessions = parseInt(document.getElementById('sessions').value);
     
     // Formula: (Base Price / 8) * selected sessions * multiplier
-    // This allows for dynamic pricing based on the amount of sessions
     const basePerSession = directionPrice / 8;
     const total = basePerSession * sessions * multiplier;
     
     const display = document.getElementById('totalPrice');
-    display.innerText = `${Math.round(total).toLocaleString()} so'm`;
+    display.innerText = `${Math.round(total).toLocaleString()} сум`;
     
     // Smooth update effect
     display.style.transform = 'scale(1.1)';
