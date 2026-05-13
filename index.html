@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife | Mukammal Tana Sari Yo'l</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Fit<span>Life</span></a>
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link active">Asosiy</a></li>
+                <li><a href="directions.html" class="nav__link">Yo'nalishlar</a></li>
+                <li><a href="signup.html" class="nav__link">Yozilish</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero reveal">
+            <div class="container hero__content">
+                <h1 class="hero__title">O'zligingni FitLife Bilan Kashf Et!</h1>
+                <p class="hero__subtitle">Biz bilan birga sog'lom turmush tarzini boshlang va orzungizdagi tanaga ega bo'ling.</p>
+                <div class="hero__actions">
+                    <a href="signup.html" class="btn btn--primary">Bepul Mashg'ulotga Yozilish</a>
+                    <a href="directions.html" class="btn btn--outline">Yo'nalishlarni Ko'rish</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features container py-10">
+            <h2 class="section-title reveal">Nima Uchun Biz?</h2>
+            <div class="features__grid">
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">🏆</div>
+                    <h3 class="feature-card__title">Professional Trenerlar</h3>
+                    <p class="feature-card__text">Xalqaro darajadagi sertifikatga ega bo'lgan mutaxassislar sizga individual yondashadi.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">📅</div>
+                    <h3 class="feature-card__title">Moslashuvchan Jadval</h3>
+                    <p class="feature-card__text">Ertalabki, kunduzgi va kechki guruhlar - o'zingizga qulay vaqtni tanlang.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-card__icon">💳</div>
+                    <h3 class="feature-card__title">Shaffof Narxlar</h3>
+                    <p class="feature-card__text">Hech qanday yashirin to'lovlarsiz, 1 oydan boshlanadigan qulay obunalar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Slider -->
+        <section class="reviews py-10">
+            <div class="container reveal">
+                <h2 class="section-title">Mijozlarimiz Fikri</h2>
+                <div class="slider" id="reviewSlider">
+                    <div class="slider__container">
+                        <div class="slider__track" id="sliderTrack">
+                            <div class="slide">
+                                <p class="slide__text">"FitLife-da 3 oydan beri shug'ullanyapman. Natija a'lo! Trenerlar juda e'tiborli."</p>
+                                <h4 class="slide__author">- Azizbek Abdullayev</h4>
+                            </div>
+                            <div class="slide">
+                                <p class="slide__text">"Yoga darslari menga ichki xotirjamlik va tana moslashuvchanligini berdi. Rahmat!"</p>
+                                <h4 class="slide__author">- Malika Sobirova</h4>
+                            </div>
+                            <div class="slide">
+                                <p class="slide__text">"Zamonaviy trenajyorlar va doimo toza zal. Toshkentdagi eng yaxshi klub!"</p>
+                                <h4 class="slide__author">- Jasur Toshpo'latov</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__nav">
+                        <button class="slider__btn" id="prevBtn">&larr;</button>
+                        <button class="slider__btn" id="nextBtn">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__info">
+                <div class="logo">Fit<span>Life</span></div>
+                <p>Sizning muvaffaqiyatingiz - bizning maqsadimiz.</p>
+            </div>
+            <div class="footer__contacts">
+                <h4>Kontaktlar</h4>
+                <p>📍 Namangan sh. TexnoPark 1-etaj</p>
+                <p>📞 +998 95 337 06 27</p>
+                <p>📧 azimjon@fitlife.uz</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 FitLife Fitness Club. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
