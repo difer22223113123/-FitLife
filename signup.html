@@ -16,8 +16,21 @@
                 <li><a href="directions.html" class="nav__link">Направления</a></li>
                 <li><a href="signup.html" class="nav__link active">Запись</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
+
+    <div class="nav__overlay" id="navOverlay">
+        <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="directions.html" class="nav__link">Направления</a></li>
+            <li><a href="signup.html" class="nav__link active">Запись</a></li>
+        </ul>
+    </div>
 
     <main class="container py-10">
         <div class="form-wrapper reveal">
@@ -25,22 +38,22 @@
             <p class="form-subtitle">Оставьте свои данные, наш менеджер свяжется с вами в течение 15 минут.</p>
             
             <form id="signupForm" class="signup-form">
-                <div class="form-group">
+                <div class="form-group" id="nameGroup">
                     <label for="fullName">Ф.И.О.</label>
                     <input type="text" id="fullName" placeholder="Например: Абдуллаев Азизбек" required>
-                    <span class="error-msg" id="nameError">Должно быть не менее 5 символов</span>
+                    <span class="error-msg">Должно быть не менее 5 символов</span>
                 </div>
                 
-                <div class="form-group">
+                <div class="form-group" id="phoneGroup">
                     <label for="phone">Номер телефона</label>
-                    <input type="text" id="phone" placeholder="+7(XXX)-XXX-XX-XX" required>
-                    <span class="error-msg" id="phoneError">Неверный формат</span>
+                    <input type="text" id="phone" placeholder="+998 (XX) XXX-XX-XX" required>
+                    <span class="error-msg">Неверный формат</span>
                 </div>
                 
-                <div class="form-group">
+                <div class="form-group" id="emailGroup">
                     <label for="email">Email адрес</label>
                     <input type="email" id="email" placeholder="example@mail.com" required>
-                    <span class="error-msg" id="emailError">Неверный формат email</span>
+                    <span class="error-msg">Неверный формат email</span>
                 </div>
                 
                 <div class="form-group">
@@ -56,10 +69,13 @@
                 
                 <div class="form-group">
                     <label>Удобное время</label>
-                    <div class="radio-group">
-                        <label><input type="radio" name="time" value="morning" checked> Утро</label>
-                        <label><input type="radio" name="time" value="afternoon"> День</label>
-                        <label><input type="radio" name="time" value="evening"> Вечер</label>
+                    <div class="radio-group-wrapper" id="timeGroup">
+                        <div class="radio-group">
+                            <label><input type="radio" name="time" value="morning"> Утро</label>
+                            <label><input type="radio" name="time" value="afternoon"> День</label>
+                            <label><input type="radio" name="time" value="evening"> Вечер</label>
+                        </div>
+                        <span class="error-msg">Пожалуйста, выберите время</span>
                     </div>
                 </div>
                 
@@ -80,12 +96,23 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer__bottom">
-            <p>&copy; 2024 FitLife Fitness Club. Все права защищены.</p>
+        <div class="container footer__grid">
+            <div class="footer__info">
+                <div class="logo">Fit<span>Life</span></div>
+                <p>Ваш успех — наша цель.</p>
+            </div>
+            <div class="footer__contacts">
+                <h4>Контакты</h4>
+                <p>📍 г. Наманган, ул. Ислама Каримова, 15</p>
+                <p>📞 +998 90 123 45 67</p>
+                <p>📧 info@fitlife.uz</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 FitLife Fitness Club. Все права защищены.</p>
         </div>
     </footer>
 
-    <script src="js/animations.js"></script>
-    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

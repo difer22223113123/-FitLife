@@ -16,13 +16,25 @@
                 <li><a href="directions.html" class="nav__link active">Направления</a></li>
                 <li><a href="signup.html" class="nav__link">Запись</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
+
+    <div class="nav__overlay" id="navOverlay">
+        <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="directions.html" class="nav__link active">Направления</a></li>
+            <li><a href="signup.html" class="nav__link">Запись</a></li>
+        </ul>
+    </div>
 
     <main class="container py-10">
         <h2 class="section-title reveal">Направления тренировок</h2>
         
-        <!-- Directions Grid -->
         <div class="directions-grid">
             <div class="dir-card reveal">
                 <div class="dir-card__img" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800');"></div>
@@ -58,7 +70,6 @@
             </div>
         </div>
 
-        <!-- Calculator Section -->
         <section class="calculator-section reveal py-10">
             <div class="calculator">
                 <h3 class="calculator__title">Расчет стоимости абонемента</h3>
@@ -94,12 +105,23 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer__bottom">
-            <p>&copy; 2024 FitLife Fitness Club. Все права защищены.</p>
+        <div class="container footer__grid">
+            <div class="footer__info">
+                <div class="logo">Fit<span>Life</span></div>
+                <p>Ваш успех — наша цель.</p>
+            </div>
+            <div class="footer__contacts">
+                <h4>Контакты</h4>
+                <p>📍 г. Наманган, ул. Ислама Каримова, 15</p>
+                <p>📞 +998 90 123 45 67</p>
+                <p>📧 info@fitlife.uz</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 FitLife Fitness Club. Все права защищены.</p>
         </div>
     </footer>
 
-    <script src="js/animations.js"></script>
-    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav container">
@@ -16,11 +18,23 @@
                 <li><a href="directions.html" class="nav__link">Направления</a></li>
                 <li><a href="signup.html" class="nav__link">Запись</a></li>
             </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
+    <div class="nav__overlay" id="navOverlay">
+        <ul class="nav__list">
+            <li><a href="index.html" class="nav__link active">Главная</a></li>
+            <li><a href="directions.html" class="nav__link">Направления</a></li>
+            <li><a href="signup.html" class="nav__link">Запись</a></li>
+        </ul>
+    </div>
+
     <main>
-        <!-- Hero Section -->
         <section class="hero reveal">
             <div class="container hero__content">
                 <h1 class="hero__title">Раскрой себя вместе с FitLife!</h1>
@@ -32,19 +46,20 @@
             </div>
         </section>
 
-        <!-- Features Section -->
         <section class="features container py-10">
             <h2 class="section-title reveal">Почему мы?</h2>
             <div class="features__grid">
                 <div class="feature-card reveal">
                     <div class="feature-card__icon">🏆</div>
                     <h3 class="feature-card__title">Профессиональные тренеры</h3>
-                    <p class="feature-card__text">Специалисты с сертификатами международного уровня обеспечат индивидуальный подход.</p>
+                    <p class="feature-card__text">Специалисты с сертификатами международного уровня обеспечат
+                        индивидуальный подход.</p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-card__icon">📅</div>
                     <h3 class="feature-card__title">Гибкое расписание</h3>
-                    <p class="feature-card__text">Утренние, дневные и вечерние группы — выбирайте удобное для вас время.</p>
+                    <p class="feature-card__text">Утренние, дневные и вечерние группы — выбирайте удобное для вас время.
+                    </p>
                 </div>
                 <div class="feature-card reveal">
                     <div class="feature-card__icon">💳</div>
@@ -54,7 +69,6 @@
             </div>
         </section>
 
-        <!-- Reviews Slider -->
         <section class="reviews py-10">
             <div class="container reveal">
                 <h2 class="section-title">Отзывы наших клиентов</h2>
@@ -62,15 +76,18 @@
                     <div class="slider__container">
                         <div class="slider__track" id="sliderTrack">
                             <div class="slide">
-                                <p class="slide__text">"Занимаюсь в FitLife уже 3 месяца. Результат отличный! Тренеры очень внимательны."</p>
+                                <p class="slide__text">"Занимаюсь в FitLife уже 3 месяца. Результат отличный! Тренеры
+                                    очень внимательны."</p>
                                 <h4 class="slide__author">- Азизбек Абдуллаев</h4>
                             </div>
                             <div class="slide">
-                                <p class="slide__text">"Уроки йоги дали мне внутренний покой и гибкость тела. Спасибо!"</p>
+                                <p class="slide__text">"Уроки йоги дали мне внутренний покой и гибкость тела. Спасибо!"
+                                </p>
                                 <h4 class="slide__author">- Малика Собирова</h4>
                             </div>
                             <div class="slide">
-                                <p class="slide__text">"Современные тренажеры и всегда чистый зал. Лучший клуб в Ташкенте!"</p>
+                                <p class="slide__text">"Современные тренажеры и всегда чистый зал. Лучший клуб в
+                                    Ташкенте!"</p>
                                 <h4 class="slide__author">- Жасур Тошпулатов</h4>
                             </div>
                         </div>
@@ -92,17 +109,17 @@
             </div>
             <div class="footer__contacts">
                 <h4>Контакты</h4>
-                <p>📍 г. Ташкент, Чиланзар, 5-й квартал</p>
+                <p>📍 г. Наманган, ул. Ислама Каримова, 15</p>
                 <p>📞 +998 90 123 45 67</p>
                 <p>📧 info@fitlife.uz</p>
             </div>
         </div>
         <div class="footer__bottom">
-            <p>&copy; 2024 FitLife Fitness Club. Все права защищены.</p>
+            <p>&copy; 2026 FitLife Fitness Club. Все права защищены.</p>
         </div>
     </footer>
 
-    <script src="js/animations.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
