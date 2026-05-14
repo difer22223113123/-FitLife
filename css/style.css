@@ -9,11 +9,35 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset & Global */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Web App Enhancements */
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    user-select: none; /* Prevent text selection like a native app */
+    -webkit-touch-callout: none;
+    overscroll-behavior-y: contain; /* Prevent bounce effect */
+}
+
+input, textarea, select {
+    user-select: text; /* Allow text input */
+}
+
+/* Safe area for modern phones with notches */
+.header {
+    padding-top: env(safe-area-inset-top, 15px);
+}
+
+.footer {
+    padding-bottom: env(safe-area-inset-bottom, 30px);
+}
+
+/* Active state for buttons to feel more responsive */
+.btn:active {
+    transform: scale(0.95);
+    opacity: 0.9;
 }
 
 body {

@@ -220,6 +220,16 @@ function initApp() {
     initCalc();
     initValidator();
     initObserver();
+    
+    // Register PWA Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('SW Registered'))
+                .catch(err => console.log('SW Failed', err));
+        });
+    }
+
     console.log('FitLife | Application Initialized');
 }
 
